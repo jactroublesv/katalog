@@ -7,7 +7,7 @@
         $pass = $_POST['contra'];
 
         if($user OR $pass == null){
-            $_SESSION['message'] = "Usuario y/o contrasena vacios";
+            $_SESSION['message'] = "Usuario y/o contrasena incorrectos";
             $_SESSION['type'] = 'danger';
                 
             header("location: ../login.php");
